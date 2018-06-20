@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/border_layout_product_detail"
+    android:padding="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shoes"
+            android:layout_weight="1"
+
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#c0c3c4"
+            android:text="Black T-Shirt"
+            android:textSize="15dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="2dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#c0c3c4"
+            android:text="Camisetas"
+            android:textSize="15dp"
+            android:layout_gravity="left"
+            android:textStyle="normal"
+
+            />
+
+        <TextView
+            android:id="@+id/stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#c0c3c4"
+            android:text="0"
+            android:textSize="15dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="2dp"
+            android:textStyle="bold"
+
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:rating="2.0"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            />
+
+        <TextView
+            android:id="@+id/precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#c0c3c4"
+            android:text="$8.99"
+            android:textSize="15dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="2dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#c0c3c4"
+            android:text="Descripcion"
+            android:textSize="15dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="2dp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="AGREGAR AL PEDIDO"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/add_to_cart"
+            android:layout_margin="4dp"
+            android:padding="12dp"
+            android:gravity="center"
+
+
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="REMOVER DEL PEDIDO"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/remove_to_cart"
+            android:layout_margin="4dp"
+            android:padding="12dp"
+            android:gravity="center"
+            android:visibility="gone"
+
+
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColorLink="#000"
+            android:text="VER PEDIDO"
+            android:id="@+id/buy_now"
+            android:layout_margin="4dp"
+            android:padding="12dp"
+            android:gravity="center"
+
+
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

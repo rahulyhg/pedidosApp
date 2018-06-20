@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sudamericano.tesis.pedidosapp.TabActivity">
+
+
+    <item android:id="@+id/search"
+        android:title="@string/search_title"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/search"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+
+    <item android:id="@+id/carrito"
+        android:title="Carrito"
+        android:icon="@drawable/cart"
+        app:showAsAction="collapseActionView|ifRoom"
+
+
+        />
+
+    <item android:id="@+id/showPedidos"
+        android:title="Menu Principal"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        app:showAsAction="collapseActionView|ifRoom"
+
+
+        />
+
+
+
+</menu>

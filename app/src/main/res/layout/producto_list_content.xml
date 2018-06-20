@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/border_image_layout"
+
+        >
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shoes"
+            android:layout_weight="1"
+
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#c0c3c4"
+            android:text="Black T-Shirt"
+            android:textSize="15dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="2dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#c0c3c4"
+            android:text=" "
+            android:textSize="15dp"
+            android:layout_gravity="left"
+            android:textStyle="normal"
+
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:rating="2.0"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#c0c3c4"
+            android:text="$8.99"
+            android:textSize="15dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="2dp"
+            android:textStyle="bold"
+
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

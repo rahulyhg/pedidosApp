@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sudamericano.tesis.pedidosapp.pedidoActivity"
+    tools:showIn="@layout/activity_pedido">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Datos del Cliente"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cliente_nuevo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="BUSCAR CLIENTE"
+                android:textSize="20dp" />
+
+            <ToggleButton
+                android:id="@+id/toggle_cliente_nuevo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="BUSCAR CLIENTE"
+                android:textOff="Crear Cliente"
+                android:textOn="Buscar Cliente" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <com.sudamericano.tesis.pedidosapp.Utils.DelayAutoCompleteTextView
+                android:id="@+id/clientes_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:paddingRight="@dimen/text_margin"
+                android:imeOptions="flagNoExtractUi|actionSearch"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_edittext_states"
+                android:hint="Buscar Cliente"
+                android:padding="8dp"
+                android:layout_weight="1"
+
+                />
+
+            <ProgressBar
+                android:id="@+id/pb_loading_indicator"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/text_margin"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/Id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="id"
+            android:padding="8dp"
+            android:inputType="phone"
+            android:enabled="false"
+            />
+
+        <EditText
+            android:id="@+id/identificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="Cédula/Ruc"
+            android:padding="8dp"
+            android:inputType="number"
+
+
+
+
+            />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="Nombres"
+            android:padding="8dp"
+            android:inputType="textCapCharacters"
+
+
+            />
+
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="Apellidos"
+            android:padding="8dp"
+            android:inputType="textCapCharacters"
+
+
+            />
+
+        <Spinner
+            android:id="@+id/country"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_states"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="Provincia"
+            android:padding="8dp"
+            android:inputType="textCapCharacters"
+            />
+
+
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="Ciudad"
+            android:padding="8dp"
+            android:inputType="textCapCharacters"
+            />
+
+        <EditText
+            android:id="@+id/Address1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="Calle Principal"
+            android:padding="8dp"
+            android:inputType="textCapCharacters"
+            />
+
+        <EditText
+            android:id="@+id/Address2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="Calle Secundaria"
+            android:padding="8dp"
+            android:inputType="textCapCharacters"
+
+
+            />
+
+        <EditText
+            android:id="@+id/Phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="Telefono"
+            android:padding="8dp"
+            android:inputType="phone"
+            />
+
+        <EditText
+            android:id="@+id/PostCode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="Código Postal"
+            android:padding="8dp"
+            android:inputType="phone"
+            />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_states"
+            android:hint="Email"
+            android:padding="8dp"
+
+            android:inputType="textEmailAddress"
+
+
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+
+            ></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Detalle del Pedido"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+
+            ></View>
+
+
+        <ScrollView
+            android:id="@+id/layout"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dip"
+            android:scrollbarStyle="outsideInset"
+            android:fillViewport="true">
+            <TableLayout
+                android:id="@+id/tablePedidoItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_overlay"
+                >
+            </TableLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+
+            ></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:background="#fff"
+            android:layout_marginRight="20dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Subtotal IVA 0:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/subtotal_with_taxes0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:background="#fff"
+            android:layout_marginRight="20dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Subtotal IVA 14%:"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/taxes_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="8dp"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/subtotal_with_taxes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:background="#fff"
+            android:layout_marginRight="20dp"
+
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Descuento"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/descountType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                />
+
+
+
+            <TextView
+                android:id="@+id/descountValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+
+                />
+
+            <ImageButton
+                android:id="@+id/remove_coupon"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:src="@drawable/remove"
+                android:visibility="gone"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="5dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:background="#fff"
+            >
+
+
+
+
+            <TextView
+                android:id="@+id/taxes_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+
+
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:background="#fff"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="8dp"
+                android:text="Total"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:id="@+id/totalPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+
+
+                />
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Cupon"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+
+           <EditText
+               android:id="@+id/CuponCode"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/rounded_edittext_states"
+               android:hint="PROMO-3"
+               android:padding="8dp"
+               android:layout_weight="1"
+
+               />
+           <Button
+               android:id="@+id/btn_aplicar_cupon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginTop="10dp"
+               android:text="APLICAR"
+               android:textSize="14dp"
+               android:textStyle="bold"
+
+               />
+
+       </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_crear_pedito"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            android:background="@color/colorPrimary"
+            android:text="REALIZAR PEDIDO"
+            android:textColor="@color/colorPrimaryDark"
+           />
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sudamericano.tesis.pedidosapp.CartActivity"
+    tools:showIn="@layout/activity_cart">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/border_layout"
+
+        >
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shoes"
+            android:layout_weight="1"
+            />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:layout_marginLeft="30dp"
+    >
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#c0c3c4"
+        android:text="Black T-Shirt"
+        android:textSize="15dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="2dp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:id="@+id/categoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#c0c3c4"
+        android:text="Camisetas"
+        android:textSize="15dp"
+        android:layout_gravity="left"
+        android:textStyle="normal"
+
+        />
+    <TextView
+        android:id="@+id/precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#c0c3c4"
+        android:text="$8.99"
+        android:textSize="15dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="2dp"
+        android:textStyle="bold"
+
+        />
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >3</NumberPicker>
+</LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

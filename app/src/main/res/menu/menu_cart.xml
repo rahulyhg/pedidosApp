@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sudamericano.tesis.pedidosapp.CartActivity">
+
+
+    <item android:id="@+id/show_menu"
+        android:title="Menu Principal"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        app:showAsAction="collapseActionView|ifRoom"
+
+
+        />
+
+
+</menu>

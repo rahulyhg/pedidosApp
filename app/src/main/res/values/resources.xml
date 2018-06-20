@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayCities">
+        <item>Cuenca</item>
+        <item>Guayaquil</item>
+        <item>Quito</item>
+    </string-array>
+
+    <string-array name="ArrayStates">
+        <item>Azuay</item>
+        <item>Pichincha</item>
+        <item>Guayas</item>
+    </string-array>
+
+    <string-array name="ArrayCountries">
+        <item id="EC">Ecuador</item>
+    </string-array>
+
+
+</resources>
+
+

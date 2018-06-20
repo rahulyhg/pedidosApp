@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Comisariato del Pueblo </string>
+    <string name="action_settings">Settings</string>
+    <string name="search_title">Buscar</string>
+    <string name="lostpassword">Olvidaste tu contraseña? Recuperar</string>
+    <string name="title_activity_index">IndexActivity</string>
+    <string name="large_text">
+
+    </string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_categoria_list">Categorias</string>
+    <string name="title_categoria_detail">Categoria Detail</string>
+    <string name="title_producto_list">Productos</string>
+    <string name="title_producto_detail">Detalles del Producto</string>
+    <string name="title_activity_cart">Pedido</string>
+    <string name="title_select_quantity">Cantidad:</string>
+    <string name="cancel">Cancelar</string>
+    <string name="continuar_comprando">Continuar Comprando</string>
+    <string name="ver_carrito">Ver Carrito</string>
+    <string name="DOMAIN">http://arboreng.com/infog/pedidosapp/</string>
+    <string name="CONSUMER_KEY">ck_13a8f4922ecf8c9a0697b99bddc3ebe8c61aa1a0</string>
+    <string name="CONSUMER_SECRET_KEY">cs_b606482e159a2c9746a6e3e0c432c4fdef076d91</string>
+    <string name="OAUTHUSERNAME">bSkarquLJNyF7mh4fie3aEGIvJih3A</string>
+    <string name="OAUTHSECRET">QesbpUBTGlHe1OBjSQB7TLMAuhjNzm</string>
+    <string name="MY_SOCKET_TIMEOUT_MS">30000</string>
+    <string name="title_item_list">Carrito de Compras</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="error_invalid_password">Clave incorrecta</string>
+    <string name="error_invalid_email">Usuario Incorrecto</string>
+    <string name="title_activity_pedido">Pedido</string>
+    <string name="title_activity_pedidos">Ordenes</string>
+    <string name="title_activity_pedido_detalle">Detalle de la Orden</string>
+    <string name="title_activity_main">Main</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_menu">Menu</string>
+
+    <string name="title_activity_manual">Manual de Usuario</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_serach">SerachActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+    <string name="maps_api">AIzaSyBKDWzb16luUi5MvZUXsqviofjMi_WN41U</string>
+    <string name="title_order_list">Pedidos</string>
+    <string name="title_order_detail">Detalle del Pedido</string>
+
+
+</resources>
